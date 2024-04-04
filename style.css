@@ -4,18 +4,19 @@
 }
 
 body{
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: black;
+    background: linear-gradient(0.25turn, #6e6f6f, #7e8778, #6f6f6f)
 }
 
-.text p, .box-surprise p {
+.text p, .box-surprise p,.box-surprise-error p {
     color: white;
     font-size: 1.2em;
+    
 }
 
 .box{
@@ -28,7 +29,7 @@ body{
     height: 200px;
     gap: 15px;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(239, 239, 239, 0.5);
+    box-shadow: 5px 5px 15px rgba(54, 54, 54, 0.5);
     margin-top:2em;
 }
 
@@ -54,12 +55,17 @@ button:hover{
     color: white
 }
 
-.box-surprise{
+.box-surprise, .box-surprise-error{
     margin-top: 3em;
-    /* display: none; */
 }
 
-.box-surprise p{
+.box-surprise p, .box-surprise-error p{
     font-size: 3em;
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        width: auto;
+    }
 }
 
