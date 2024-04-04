@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+.text p, .box-surprise p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    width: 600px;
+    height: 200px;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(239, 239, 239, 0.5);
+    margin-top:2em;
+}
+
+.box h2, text p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box input{
+    width: 300px;
+    padding: 1.2em;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(40, 165, 1, 0.742);
+    color: #cacaca;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: white
+}
+
+.box-surprise{
+    margin-top: 3em;
+    /* display: none; */
+}
+
+.box-surprise p{
+    font-size: 3em;
+}
+
