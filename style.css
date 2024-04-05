@@ -15,8 +15,7 @@ body{
 
 .text p, .box-surprise p,.box-surprise-error p {
     color: white;
-    font-size: 1.2em;
-    
+    font-size: 1.3em;
 }
 
 .box{
@@ -30,7 +29,7 @@ body{
     gap: 15px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(54, 54, 54, 0.5);
-    margin-top:2em;
+    margin:2em;
 }
 
 .box h2, text p{
@@ -57,15 +56,35 @@ button:hover{
 
 .box-surprise, .box-surprise-error{
     margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(213, 213, 213);
+    border-radius: 15px;
+    width: 80%;
 }
 
 .box-surprise p, .box-surprise-error p{
     font-size: 3em;
+    text-align: center;
+    color: rgb(5, 5, 5);
 }
+
+.box-surprise , .box-surprise-error{
+    box-shadow: 5px 5px 15px rgba(54, 54, 54, 0.5);
+
+}
+
 
 @media screen and (max-width: 768px){
     .box{
         width: auto;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    .text{
+        margin-top:2em;
     }
 }
 
