@@ -10,8 +10,11 @@ button.addEventListener("click", () => {
     if (password.value === "Starfoulah") {
         box.style.display = "block";
         boxError.style.display = "none";
+        password.value = "";
     }else{
         boxError.style.display = "block";
         box.style.display = "none";
+        password.value = "";
+
     }
 });
